@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.2 24.42">
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="logo">
+        <path d="M.12.12V24.29h23V.12Zm3,22.67H.87V20.54H3.13Zm0-3.92H.87V16.61H3.13Zm0-3.92H.87V12.7H3.13Zm0-3.91H.87V8.78H3.13Zm0-3.91H.87V4.87H3.13Zm0-3.91H.87V1H3.13ZM22.25,22.79H20V20.54h2.25Zm0-3.92H20V16.61h2.25Zm0-3.92H20V12.7h2.25Zm0-3.91H20V8.78h2.25Zm0-3.91H20V4.87h2.25Zm0-3.91H20V1h2.25Z" style="fill: #03261f;stroke: #9b9b9b;stroke-miterlimit: 10;stroke-width: 0.25px"/>
+        <g>
+          <polygon points="9.72 7.15 5.08 20.15 14.37 20.15 9.72 7.15" style="fill: #03261f;stroke: #9b9b9b;stroke-miterlimit: 10;stroke-width: 0.25px"/>
+          <polygon points="14.37 9.15 10.44 20.15 18.31 20.15 14.37 9.15" style="fill: #03261f;stroke: #9b9b9b;stroke-miterlimit: 10;stroke-width: 0.25px"/>
+          <ellipse cx="16.23" cy="5.15" rx="1.86" ry="2" style="fill: #03261f;stroke: #9b9b9b;stroke-miterlimit: 10;stroke-width: 0.25px"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
