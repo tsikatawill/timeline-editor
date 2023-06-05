@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function App() {
   return (
     <>
@@ -8,6 +10,8 @@ function App() {
         esse, commodi consequatur excepturi nostrum sunt fugit consequuntur
         accusamus tempore harum asperiores.
       </p>
+
+      <Link to="/editor">Editor</Link>
     </>
   );
 }
