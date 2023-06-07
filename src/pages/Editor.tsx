@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
 import Logo from "../assets/icons/Logo icon.svg";
 import { Pindicator, Timeline } from "../components";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import {
   TimelineContext,
   TimelineContextType,
@@ -10,14 +10,8 @@ import {
 
 export function Editor() {
   const {
-    value: { duration, currentPosition },
+    value: { duration },
   } = useContext(TimelineContext) as TimelineContextType;
-
-  const [position, setPosition] = useState(currentPosition);
-
-  useEffect(() => {
-    setPosition(currentPosition);
-  }, [currentPosition]);
 
   return (
     <div>

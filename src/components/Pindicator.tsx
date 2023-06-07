@@ -1,6 +1,6 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import IndicatorIcon from "../assets/icons/pin 2.svg";
-import { motion, useTransform, useMotionValue } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   TimelineContext,
   TimelineContextType,

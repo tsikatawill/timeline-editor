@@ -30,7 +30,7 @@ export const TimelineProvider: React.FC<ProviderProps> = ({ children }) => {
     useState<TimelineValues>(defaultTimelineState);
 
   const updateTimeline = (value: TimelineValues) => {
-    return;
+    setTimelineState(value);
   };
 
   return (
