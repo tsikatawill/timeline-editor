@@ -1,8 +1,24 @@
 import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
 import Logo from "../assets/icons/Logo icon.svg";
+import { Pindicator, Timeline } from "../components";
+import { useContext, useEffect, useState } from "react";
+import {
+  TimelineContext,
+  TimelineContextType,
+} from "../context/TimelineContext";
 
 export function Editor() {
+  const {
+    value: { duration, currentPosition },
+  } = useContext(TimelineContext) as TimelineContextType;
+
+  const [position, setPosition] = useState(currentPosition);
+
+  useEffect(() => {
+    setPosition(currentPosition);
+  }, [currentPosition]);
+
   return (
     <div>
       <div className="flex min-h-screen bg-cs-green-dark text-white">
@@ -37,20 +53,19 @@ export function Editor() {
         </div>
 
         <div className="main flex flex-col flex-1">
-          <div className="h-64 timeline border-t border-cs-gray custom-scrollbar w-[calc(100vw-20rem)] bg-cs-primary-green max-w-full mt-auto overflow-x-scroll">
-            <div className="time sticky top-0 border-b flex items-center border-cs-gray h-10 bg-cs-primary-green">
-              {[0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5].map((i, idx) => (
-                <p
-                  key={idx}
-                  className="w-10 border-r border-cs-gray text-center"
-                >
-                  {i}
-                </p>
-              ))}
+          <div className="p-5 text-5xl w-full grid text-cs-gray place-content-center mt-32">
+            Media Player
+          </div>
+
+          <div className="grid relative timeline border-t border-cs-gray custom-scrollbar w-[calc(100vw-20rem)] bg-cs-primary-green max-w-full mt-auto overflow-x-scroll">
+            <Pindicator />
+            <Timeline durationInSecs={duration} />
+
+            <div className="vid-dz h-20 border-b w-full border-cs-gray">
+              Video
             </div>
-            <div className="vid-dz h-24 border-b border-cs-gray">g</div>
-            <div className="vid-dz h-24 border-b border-cs-gray">g</div>
-            <div className="vid-dz h-24 border-b border-cs-gray">g</div>
+            <div className="vid-dz h-20 border-b border-cs-gray">Video</div>
+            <div className="vid-dz h-12 border-b border-cs-gray">Audio</div>
           </div>
         </div>
       </div>
